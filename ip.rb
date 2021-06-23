@@ -1,11 +1,11 @@
 #! /usr/bin/ruby
 
-require "requests/sugar"
-require "rainbow"
-
 system "gem install requests"
 system "gem install rainbow"
 system "clear"
+
+require "requests/sugar"
+require "rainbow"
 
 response = Requests.get("https://api.ipify.org")
 
